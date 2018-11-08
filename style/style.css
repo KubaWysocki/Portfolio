@@ -201,6 +201,7 @@ article{
 @media (min-width: 576px) {
     :root {font-size: 2.9vw;}
     .skill p{font-size: 0.8rem;}
+    .ofert ul{list-style-image: url(../img/Pointer.png);}
 }
 @media (min-width: 768px){
     :root {font-size: 2.4vw;}
