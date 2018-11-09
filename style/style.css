@@ -1,5 +1,5 @@
 :root{
-    font-size: 3.4vw;
+    font-size: 3.6vw;
 }
 body {
 	margin: 0;
@@ -10,18 +10,20 @@ body {
 }
 .preview {
     height:93vh;
-	background-image: url(../img/tlo.jpg);
-	background-position: center;
+	background-image: url(../img/bgMobile.jpg);
+    background-position: center;
+    background-size: 110% 110%;
     background-attachment: fixed;
 	text-transform: uppercase;
     overflow: hidden;
     font-weight: bold;
+    transition: 5s ease;
 }
 .name{
     background-color: black;
     opacity: 0.9;
     margin-top: 10vh;
-    font-size: 2.7rem;
+    font-size: 2.8rem;
     text-align: center;
     padding: 2%;
     transform: scale(1.05);
@@ -30,7 +32,7 @@ body {
     background-color: black;
     opacity: 0.9;
     margin-top: 5vh;
-    font-size: 1.5rem;
+    font-size: 1.7rem;
     text-align: center;
     padding: 2%;
 }
@@ -40,12 +42,13 @@ body {
     margin-top: 5vh;
     text-align: center;
     padding: 2%;
+    font-size: 1.2rem;
 }
 .start {
     margin-top: 6vh;
 }
 .btnStart{
-    letter-spacing: 2px;
+    letter-spacing: 1px;
     font-weight: bold;
 }
 .mNav {
@@ -60,7 +63,7 @@ body {
 }
 .mNav.expand{
     display: block;
-    height: 285px;
+    height: 255px;
     line-height: 1.5;
 }
 .toggleBox {
@@ -96,7 +99,7 @@ body {
     justify-content: center;
 }
 .mNav>ul>li{
-	font-size: 24px;
+	font-size: 21px;
 	text-align: center;
 	padding: 0 1.5%;
     cursor: pointer;
@@ -135,7 +138,6 @@ article{
     font-family: 'Passion One', cursive;
     font-size: 1.9rem;
     position: relative;
-    transform: scale(.8);
 }
 .skill h1{
     line-height: .8;
@@ -191,31 +193,36 @@ article{
 .contact{
     background-color: #101010;
 }
-.contact>div{
+.contact div{
     font-size: 1rem;
 }
-.contact div>i{
+.contact i{
     font-size: 1.5rem;
+    cursor: pointer;
+}
+.contact a{
+    text-decoration: none;
+    color: inherit;
 }
 
 @media (min-width: 576px) {
     :root {font-size: 2.9vw;}
     .skill p{font-size: 0.8rem;}
     .ofert ul{list-style-image: url(../img/Pointer.png);}
+    .preview {background-image: url(../img/bgDesktop.jpg);}
 }
 @media (min-width: 768px){
     :root {font-size: 2.4vw;}
-}
-@media (min-width: 992px){
-    :root {font-size: 1.9vw;}
     .toggleBox {display: none;}
     .mNav>ul {display: flex;}
     .mNav>ul>li {display: inline-block; border: none;}
-    .skill{transform: scale(.9);}
+}
+@media (min-width: 992px){
+    :root {font-size: 1.9vw;}
+    .mNav>ul>li{font-size: 24px;}
 }
 @media (min-width: 1200px){
     :root {font-size: 1.6vw}
     .skill p{font-size: 0.65rem;}
     .correct p {margin-top: 40%;}
-    .skill{transform: scale(1);}
 }
