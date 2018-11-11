@@ -3,8 +3,7 @@
 }
 body {
 	margin: 0;
-	padding: 0;
-	background-color: #222222;
+    padding: 0;
     font-family: 'Lato', sans-serif;
     color: white;
 }
@@ -12,44 +11,53 @@ body {
     height:93vh;
 	background-image: url(../img/bgMobile.jpg);
     background-position: center;
-    background-size: 110% 110%;
+    background-size: 115% 115%;
     background-attachment: fixed;
 	text-transform: uppercase;
     overflow: hidden;
     font-weight: bold;
-    transition: 5s ease;
+    transition: background-size 5s ease;
+    font-size: 1.2rem;
 }
 .name{
-    background-color: black;
-    opacity: 0.9;
+    background-color: #000000d7;
+    color: white;
     margin-top: 10vh;
-    font-size: 2.8rem;
+    font-size: 2.8em;
     text-align: center;
     padding: 2%;
-    transform: scale(1.05);
+    transform: scale(1.1);
 }
 .desc{
-    background-color: black;
-    opacity: 0.9;
+    background-color: #000000d7;
     margin-top: 5vh;
-    font-size: 1.7rem;
+    font-size: 1.7em;
     text-align: center;
     padding: 2%;
 }
 .wmore{
-    background-color: black;
-    opacity: 0.9;
+    background-color: #000000d7;
     margin-top: 5vh;
     text-align: center;
     padding: 2%;
-    font-size: 1.2rem;
+    font-size: 1.2em;
 }
 .start {
-    margin-top: 6vh;
+    margin-top: 3vh;
 }
 .btnStart{
     letter-spacing: 1px;
     font-weight: bold;
+    font-size: 1.5em !important;
+    border: 0.2rem solid white;
+    background-color: #00000070;
+    color: white;
+    transition: color .5s, border-color .5s, background-color .5s;
+}
+.btnStart:hover{
+    border-color: #e83338;
+    color: #e83338;
+    background-color: #000000d7;
 }
 .mNav {
     height: 7vh;
@@ -120,6 +128,9 @@ body {
 .mNav>ul>li>a:hover{
 	color: white;
 }
+#a1.current,#a2.current,#a3.current,#a4.current,#a5.current,#a6.current{
+    color: white;
+}
 article{
     font-size: 2.5rem;
     text-align: center;
@@ -128,15 +139,18 @@ article{
 .about{
     font-size: .9rem;
     text-align: justify;
+    background-color: #010a26;
+}
+.about h1{
+    text-align: center;
 }
 .abilities{
-    background-color: #00aced;
+    background-color: #b6d6f2;
     color: #101010;
 }
 .skill{
     margin-top: 1rem;
     font-family: 'Passion One', cursive;
-    font-size: 1.9rem;
     position: relative;
 }
 .skill h1{
@@ -162,15 +176,18 @@ article{
 .rotate{
     transform: rotateY(180deg);
 }
+.portfolio{
+    background-color: #011c52;
+}
 .portfolioItem{
-    border: .3rem solid #00aced;
+    border: .3rem solid #4e7af1;
     transition: .2s ease-out;
 }
 .portfolioItem:hover{
-    border-color: #b02214;
+    border-color: #0534b4;
 }
 .ofert{
-    background-color:  #b02214;
+    background-color:  white;
     color: #101010;
 }
 .ofert h4{
@@ -191,7 +208,7 @@ article{
     margin-left: 0.5rem;
 }
 .contact{
-    background-color: #101010;
+    background-color: #e83338;
 }
 .contact div{
     font-size: 1rem;
@@ -205,11 +222,14 @@ article{
     color: inherit;
 }
 
+@media (min-width: 450px) {
+    .preview {font-size: 1rem}
+}
 @media (min-width: 576px) {
     :root {font-size: 2.9vw;}
     .skill p{font-size: 0.8rem;}
     .ofert ul{list-style-image: url(../img/Pointer.png);}
-    .preview {background-image: url(../img/bgDesktop.jpg);}
+    .preview {background-image: url(../img/bgDesktop.jpg);font-size: 1rem}
 }
 @media (min-width: 768px){
     :root {font-size: 2.4vw;}

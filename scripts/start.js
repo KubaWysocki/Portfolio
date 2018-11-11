@@ -3,4 +3,5 @@ window.onload=()=>{
     startAnimation();
     rotate();
     zoom();
+    actualSection();
 }

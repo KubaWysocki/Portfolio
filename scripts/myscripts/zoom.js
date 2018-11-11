@@ -1,3 +1,3 @@
 const zoom=()=>{
-    $('.preview').css('background-size', '100% 100%');
+    $('.preview').css('background-size', '105% 105%');
 }
