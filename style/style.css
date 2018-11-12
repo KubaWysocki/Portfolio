@@ -195,7 +195,7 @@ article{
 }
 .ofert ul{
     text-align: left;
-    font-size: 1rem;
+    font-size: 0.9rem;
     list-style-position: outside;
     padding:0;
     margin: 0;
@@ -228,7 +228,6 @@ article{
 @media (min-width: 576px) {
     :root {font-size: 2.9vw;}
     .skill p{font-size: 0.8rem;}
-    .ofert ul{list-style-image: url(../img/Pointer.png);}
     .preview {background-image: url(../img/bgDesktop.jpg);font-size: 1rem}
 }
 @media (min-width: 768px){
