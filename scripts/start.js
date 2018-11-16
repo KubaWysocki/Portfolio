@@ -1,9 +1,7 @@
 window.onload=()=>{
-    iOS();
     menu();
     startAnimation();
     rotate();
-    zoom();
     actualSection();
     swap();
 }

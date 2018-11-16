@@ -18,7 +18,7 @@ const actualSection=()=>{
             clear();
             $('#a4').addClass('current');
         }
-        if (scrTop>$('.ofert').offset().top-100){
+        if (scrTop>$('.offer').offset().top-100){
             clear();
             $('#a5').addClass('current');
         }

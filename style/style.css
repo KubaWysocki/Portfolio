@@ -10,7 +10,7 @@ body {
 .preview {
     height:93vh;
 	background-image: url(../img/bgMobile.jpg);
-    background-position: center;
+    background-position: center bottom;
     background-size: 115% 115%;
     background-attachment: fixed;
 	text-transform: uppercase;
@@ -50,14 +50,14 @@ body {
     font-weight: bold;
     font-size: 1.5em !important;
     border: 0.2rem solid white;
-    background-color: #00000070;
+    background-color: #000000d7;
     color: white;
     transition: color .5s, border-color .5s, background-color .5s;
 }
 .btnStart:hover{
     border-color: #e83338;
     color: #e83338;
-    background-color: #000000d7;
+    background-color: #000000;
 }
 .mNav {
     height: 7vh;
@@ -186,25 +186,25 @@ article{
 .portfolioItem:hover{
     border-color: #0534b4;
 }
-.ofert{
+.offer{
     background-color:  white;
     color: #101010;
 }
-.ofert h4{
+.offer h4{
     margin: 1rem 0;
 }
-.ofert ul{
+.offer ul{
     text-align: left;
     font-size: 0.9rem;
     list-style-position: outside;
     padding:0;
     margin: 0;
 }
-.ofert ul li {
+.offer ul li {
     transition: margin-left 0.3s;
     width: 100%;
 }
-.ofert ul li:hover {
+.offer ul li:hover {
     margin-left: 0.5rem;
 }
 .contact{
@@ -228,7 +228,7 @@ article{
 @media (min-width: 576px) {
     :root {font-size: 2.9vw;}
     .skill p{font-size: 0.8rem;}
-    .preview {background-image: url(../img/bgDesktop.jpg);font-size: 1rem}
+    .preview {background-image: url(../img/bgDesktop.jpg);}
 }
 @media (min-width: 768px){
     :root {font-size: 2.4vw;}
