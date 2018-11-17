@@ -1,5 +1,5 @@
 const actualSection=()=>{
-    const clear=()=>{for(i=1;i<=6;i++){ $('#a'+i).removeClass('current');}}
+    const clear=()=>{for(i=1;i<=6;i++) $('#a'+i).removeClass('current');}
     $(document).on('scroll',function(){
         let scrTop= $(document).scrollTop();
         if (scrTop>=0) {

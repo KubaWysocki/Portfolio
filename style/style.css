@@ -22,7 +22,7 @@ body {
 .name{
     background-color: #000000d7;
     color: white;
-    margin-top: 10vh;
+    margin-top: 8vh;
     font-size: 2.8em;
     text-align: center;
     padding: 2%;
@@ -43,7 +43,7 @@ body {
     font-size: 1.2em;
 }
 .start {
-    margin-top: 3vh;
+    margin-top: 5vh;
 }
 .btnStart{
     letter-spacing: 1px;
@@ -181,7 +181,7 @@ article{
 }
 .portfolioItem{
     border: .3rem solid #4e7af1;
-    transition: .2s ease-out;
+    transition: border .2s ease-out;
 }
 .portfolioItem:hover{
     border-color: #0534b4;
