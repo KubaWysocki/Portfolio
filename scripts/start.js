@@ -1,8 +1,8 @@
 window.onload=()=>{
+    startAnimation();
     menu();
     scrolling();
-    startAnimation();
-    rotate();
     actualSection();
+    rotate();
     swap();
 }
