@@ -17,8 +17,9 @@
     <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Passion+One" rel="stylesheet">
 </head>
-<body>
-    <header class="preview">
+<body class="stop_scrolling">
+    <div id="loading"><img src="img/loading.gif" alt="loading" class="col-4 offset-4"></div>
+    <header class="preview" id="preview">
         <div class="container">
             <div class="row">
                 <div class="name col-10 offset-1 col-sm-12 offset-sm-0 col-md-10 offset-md-1 col-lg-8 offset-lg-1">
@@ -43,16 +44,16 @@
 				<div class="bar3"></div>
         </div>
         <ul>
-			<li><a id="a1" href="#" class="current"><i class="icon-up"></i>Start</a></li>
-			<li><a id="a2" href="#"><i class="icon-user"></i>O Mnie</a></li>
-			<li><a id="a3" href="#"><i class="icon-tools"></i>Umiejętności</a></li>
-			<li><a id="a4" href="#"><i class="icon-folder"></i>Portfolio</a></li>
-			<li><a id="a5" href="#"><i class="icon-attach"></i>Oferta</a></li>
-			<li><a id="a6" href="#"><i class="icon-mail"></i>Kontakt</a></li>
+			<li><a id="a1" href="#preview" class="current"><i class="icon-up"></i>Start</a></li>
+			<li><a id="a2" href="#about"><i class="icon-user"></i>O Mnie</a></li>
+			<li><a id="a3" href="#abilities"><i class="icon-tools"></i>Umiejętności</a></li>
+			<li><a id="a4" href="#portfolio"><i class="icon-folder"></i>Portfolio</a></li>
+			<li><a id="a5" href="#offer"><i class="icon-attach"></i>Oferta</a></li>
+			<li><a id="a6" href="#contact"><i class="icon-mail"></i>Kontakt</a></li>
 		</ul>	
     </nav>
     <main>
-        <article class="about">
+        <article class="about" id="about">
                 <h1>Parę słów o mnie</h1>
             <div class="container-fluid">
                 <div class="row">
@@ -65,7 +66,7 @@
                 </div>
             </div>
         </article>
-       <article class="abilities">
+       <article class="abilities" id="abilities">
                 <h1>Umiejętności</h1>
             <div style="font-size: 15px;"><i>Najedź/naciśnij na logo aby uzyskać więcej informacji</i></div>
             <div class="container-fluid">
@@ -115,7 +116,7 @@
                 </div>
             </div>
        </article>
-       <article class="portfolio">
+       <article class="portfolio" id="portfolio">
             <h1>Portfolio</h1>
             <div class="container-fluid">
                 <div class="row">
@@ -128,7 +129,7 @@
                 </div>
             </div>
        </article>
-       <article class="offer">
+       <article class="offer" id="offer">
            <h1>Oferta</h1>
            <div class="container-fluid">
                <div class="row">
@@ -160,7 +161,7 @@
                </div>
            </div>
        </article>
-       <article class="contact">
+       <article class="contact" id="contact">
            <h1>Zainteresowany współpracą?</h1>
            <div class="container-fluid">
                <div class="row">
@@ -194,5 +195,6 @@
     <script src="scripts/myscripts/rotate.js"></script>
     <script src="scripts/myscripts/actualSection.js"></script>
     <script src="scripts/myscripts/swap.js"></script>
+    <script src="scripts/myscripts/load.js"></script>
 </body>
 </html>

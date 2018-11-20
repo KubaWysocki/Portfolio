@@ -5,4 +5,5 @@ window.onload=()=>{
     actualSection();
     rotate();
     swap();
+    load();
 }

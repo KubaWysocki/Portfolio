@@ -7,6 +7,23 @@ body {
     font-family: 'Lato', sans-serif;
     color: white;
 }
+.stop_scrolling{
+    height: 100%;
+    overflow: hidden;
+}
+#loading{
+    position: fixed;
+    top:0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: #010a26;
+    display: flex;
+    align-items: center;
+    z-index: 3;
+    opacity: 1;
+    transition: opacity .2s ease;
+}
 .preview {
     height:93vh;
 	background-image: url(../img/bgMobile.jpg);
