@@ -33,7 +33,7 @@ body {
 .preview {
     height:93vh;
 	background-image: url(../img/bgMobile.jpg);
-    background-position: center bottom;
+    background-position: center;
     background-size: 115% 115%;
 	text-transform: uppercase;
     overflow: hidden;

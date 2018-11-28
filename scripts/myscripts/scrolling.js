@@ -1,22 +1,27 @@
 const scrolling=()=>{
-    const menu=$('.mNav').height();
-    const close=()=>{
-        if($('.mNav').hasClass('expand')){
-            $('.mNav').removeClass('expand'); 
-            $('.mNav>ul').removeClass("expanded");
-            $('.bar1,.bar2,.bar3').toggleClass("change");	
-        }
+    const scroll=(e)=>{
+        const menu=$('.mNav').height();
+        let targ=$($(e.target).attr('href'));
+        $('html, body').animate({
+            scrollTop: targ.offset().top-menu
+        }, 500);
     }
-    $('.start').click(()=> { 
-        $.scrollTo($('#about'), {duration:700,offset:-menu});
+    const close=()=>{
+        $('.mNav').removeClass('expand'); 
+        $('.mNav>ul').removeClass("expanded");
+        $('.bar1,.bar2,.bar3').toggleClass("change");	
+    }
+    $('.start').on('click',(e)=>{
+        scroll(e)
     });
-    $('.mNav a').click((e)=>{
-        let targ=$(e.target.getAttribute('href'));
+    $('.mNav a').on('click',(e)=>{
         e.preventDefault();
-        close();
         if($(window).width()<768){
-            setTimeout(()=>{$.scrollTo(targ, {duration:500,offset:-menu});},200);
+            close();
+            setTimeout(()=>{
+            scroll(e)
+            },200);
         }
-        else $.scrollTo(targ, {duration:500,offset:-menu});
+        else scroll(e);
     });
 }
