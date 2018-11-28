@@ -7,7 +7,7 @@ const startAnimation=()=>{
             $('.start').css('left', top/1.5);
     });
     //iOS background fixed not working bug fix
-    var iOS = /iPad|iPhone|iPod/.test(navigator.userAgent) && !window.MSStream;
+    const iOS = /iPad|iPhone|iPod/.test(navigator.userAgent) && !window.MSStream;
     if(!iOS) $('.preview').css('background-attachment','fixed');
     //deep effect on start 
     $('.preview').css('background-size', '105% 105%');

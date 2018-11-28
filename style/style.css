@@ -219,8 +219,13 @@ section:last-child{
     background-color:  white;
     color: #101010;
 }
+.full-width{
+    padding-left: 0;
+    padding-right: 0;
+    overflow-x: hidden;
+}
 .offer h4{
-    margin: 1rem 0;
+    margin: .5rem 0;
 }
 .offer ul{
     text-align: left;
