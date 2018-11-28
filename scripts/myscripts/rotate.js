@@ -11,14 +11,14 @@ $('.skill').hover(
             $('img',this).addClass('rotate');
             clearTimeout(timeoutId);
             timeoutId=setTimeout(()=>{
-                $('p', this).css('transform','rotateY(0deg) translateY(-50%)');
+                $('p', this).css('transform','rotateY(0deg) translateY(-66%)');
                 $('img',this).attr('src', src);
             },300)
         }
     },
     function(){
         $('img',this).removeClass('rotate');
-        $('p', this).css('transform','rotateY(90deg) translateY(-50%)');
+        $('p', this).css('transform','rotateY(90deg) translateY(-66%)');
         let src=$('img',this).attr('src');
             src=src.substr(0,src.lastIndexOf('.')-1);
             src=src+'0.png';

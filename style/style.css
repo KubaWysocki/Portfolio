@@ -147,10 +147,12 @@ body {
 #a1.current,#a2.current,#a3.current,#a4.current,#a5.current,#a6.current{
     color: white;
 }
-article{
-    font-size: 2.5rem;
+section{
     text-align: center;
     padding-bottom: 2%;
+}
+section:last-child{
+    padding-bottom: .5%;
 }
 .about{
     font-size: .9rem;
@@ -164,10 +166,14 @@ article{
     background-color: #b6d6f2;
     color: #101010;
 }
+.abilities span{
+    font-size: 15px;
+}
 .skill{
     margin-top: 1rem;
     font-family: 'Passion One', cursive;
     position: relative;
+    margin-bottom: 1%;
 }
 .skill h1{
     line-height: .8;
@@ -180,7 +186,7 @@ article{
     padding: 0 16%;
     position: absolute;
     top: 58%;
-    transform: rotateY(90deg) translateY(-50%);
+    transform: rotateY(90deg) translateY(-68%);
     transition: 0.3s ease;
 }
 .skill img {
@@ -188,6 +194,16 @@ article{
 }
 .rotate{
     transform: rotateY(180deg);
+}
+.skill>.row{
+    width: 90%;
+    margin: 0 auto;
+    margin-top: 6%;
+}
+.skill>.row>.col-2{
+    opacity: 0;
+    transform: scale(2.3);
+    transition: opacity .3s ease;
 }
 .portfolio{
     background-color: #011c52;
@@ -234,6 +250,10 @@ article{
     text-decoration: none;
     color: inherit;
 }
+footer{
+    font-size: 0.6rem;
+    color: #ffffff5d;
+}
 
 @media (min-width: 450px) {
     .preview {font-size: 1rem}
@@ -242,19 +262,23 @@ article{
     :root {font-size: 2.9vw;}
     .skill p{font-size: 0.8rem;}
     .preview {background-image: url(../img/bgDesktop.jpg);}
+    .skill>.row>.col-2{transform: scale(2);}
 }
 @media (min-width: 768px){
     :root {font-size: 2.4vw;}
     .toggleBox {display: none;}
     .mNav>ul {display: flex;}
     .mNav>ul>li {display: inline-block; border: none;}
+    footer{font-size: 0.6rem;}
 }
 @media (min-width: 992px){
     :root {font-size: 1.9vw;}
     .mNav>ul>li{font-size: 24px;}
+    .skill>.row>.col-2{transform: scale(1.8);}
 }
 @media (min-width: 1200px){
     :root {font-size: 1.6vw}
     .skill p{font-size: 0.65rem; top:57% !important;}
-    .skill p:last-child{top:62% !important;}
+    .skill>.row>.col-2{transform: scale(1.4);}
+    .skill:last-child>p{top:60% !important;}
 }

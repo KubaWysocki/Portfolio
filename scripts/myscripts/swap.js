@@ -1,4 +1,4 @@
-const swap=()=>{
+const swap=()=>{                            //this function changes order of ul and img on larger devices (md)
     if($(window).width()>=768){
         const image=$('#swap');
         image.remove();
@@ -6,4 +6,3 @@ const swap=()=>{
         $('.offer .row').append(image);
     }
 }
-//this function changes order of ul and img on larger devices (md)

@@ -1,9 +1,10 @@
 window.onload=()=>{
+    load();
     startAnimation();
     menu();
     scrolling();
     actualSection();
+    starsRate();
     rotate();
     swap();
-    load();
 }
