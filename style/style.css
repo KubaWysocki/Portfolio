@@ -26,7 +26,7 @@ body {
 }
 .preview {
     height:93vh;
-	background-image: url(../img/bgMobile.png);
+	background-image: url(../img/bgMobile.webp);
     background-position: center;
     background-size: 115% 115%;
 	text-transform: uppercase;
@@ -266,7 +266,7 @@ footer{
 @media (min-width: 576px) {
     :root {font-size: 2.9vw;}
     .skill p{font-size: 0.8rem;}
-    .preview {background-image: url(../img/bgDesktop.jpg);}
+    .preview {background-image: url(../img/bgDesktop.webp);}
     .skill>.row>.col-2{transform: scale(2);}
 }
 @media (min-width: 768px){
