@@ -27,20 +27,20 @@ body {
     z-index: 3;
     opacity: 1;
     -webkit-transition: opacity .2s ease;
-         -o-transition: opacity .2s ease;
-            transition: opacity .2s ease;
+    -o-transition: opacity .2s ease;
+    transition: opacity .2s ease;
 }
 .preview {
     height:93vh;
-	background-image: url(../img/bgMobile.jpg);
+	background-image: url(../img/bgMobile.png);
     background-position: center;
     background-size: 115% 115%;
 	text-transform: uppercase;
     overflow: hidden;
     font-weight: bold;
     -webkit-transition: background-size 5s ease;
-         -o-transition: background-size 5s ease;
-            transition: background-size 5s ease;
+    -o-transition: background-size 5s ease;
+    transition: background-size 5s ease;
     font-size: 1.2rem;
 }
 .name{
@@ -79,8 +79,8 @@ body {
     background-color: #000000d7;
     color: white;
     -webkit-transition: color .5s, border-color .5s, background-color .5s;
-         -o-transition: color .5s, border-color .5s, background-color .5s;
-            transition: color .5s, border-color .5s, background-color .5s;
+    -o-transition: color .5s, border-color .5s, background-color .5s;
+    transition: color .5s, border-color .5s, background-color .5s;
 }
 .btnStart:hover{
     border-color: #e83338;
@@ -96,8 +96,8 @@ body {
 	background-color:#101010;
     border-bottom: 1px solid black;
     -webkit-transition: height .2s ease;
-         -o-transition: height .2s ease;
-            transition: height .2s ease;
+    -o-transition: height .2s ease;
+    transition: height .2s ease;
     line-height: 7vh;
 }
 .mNav.expand{
@@ -117,8 +117,8 @@ body {
     background-color: #444444;
     margin: 1vh 0;
     -webkit-transition: 0.4s;
-         -o-transition: 0.4s;
-            transition: 0.4s;
+    -o-transition: 0.4s;
+    transition: 0.4s;
 }
 .bar1.change {
     -webkit-transform: rotate(-45deg) translate(-9px, 6px);
@@ -140,8 +140,8 @@ body {
 	margin:0;
 	list-style-type: none;
     -webkit-transition: opacity 0.3s;
-         -o-transition: opacity 0.3s;
-            transition: opacity 0.3s;
+    -o-transition: opacity 0.3s;
+    transition: opacity 0.3s;
     display: none;
     -webkit-box-pack: center;
         -ms-flex-pack: center;
@@ -165,8 +165,8 @@ body {
 	text-decoration:none;
     color: #444444;
     -webkit-transition: color 0.2s linear;
-         -o-transition: color 0.2s linear;
-            transition: color 0.2s linear;
+    -o-transition: color 0.2s linear;
+    transition: color 0.2s linear;
 }
 .mNav>ul>li>a:hover{
 	color: white;
@@ -176,7 +176,7 @@ body {
 }
 section{
     text-align: center;
-    padding-bottom: 2%;
+    padding: 1rem 0;
 }
 section:last-child{
     padding-bottom: .5%;
@@ -216,13 +216,13 @@ section:last-child{
     -webkit-transform: rotateY(90deg) translateY(-68%);
             transform: rotateY(90deg) translateY(-68%);
     -webkit-transition: 0.3s ease;
-         -o-transition: 0.3s ease;
-            transition: 0.3s ease;
+    -o-transition: 0.3s ease;
+    transition: 0.3s ease;
 }
 .skill img {
     -webkit-transition: .6s cubic-bezier(0.68, -0.55, 0.27, 1.55);
-         -o-transition: .6s cubic-bezier(0.68, -0.55, 0.27, 1.55);
-            transition: .6s cubic-bezier(0.68, -0.55, 0.27, 1.55);
+    -o-transition: .6s cubic-bezier(0.68, -0.55, 0.27, 1.55);
+    transition: .6s cubic-bezier(0.68, -0.55, 0.27, 1.55);
 }
 .rotate{
     -webkit-transform: rotateY(180deg);
@@ -239,8 +239,8 @@ section:last-child{
         -ms-transform: scale(2.3);
             transform: scale(2.3);
     -webkit-transition: opacity .3s ease;
-         -o-transition: opacity .3s ease;
-            transition: opacity .3s ease;
+    -o-transition: opacity .3s ease;
+    transition: opacity .3s ease;
 }
 .portfolio{
     background-color: #011c52;
@@ -248,8 +248,8 @@ section:last-child{
 .portfolioItem{
     border: .3rem solid #4e7af1;
     -webkit-transition: border .2s ease-out;
-         -o-transition: border .2s ease-out;
-            transition: border .2s ease-out;
+    -o-transition: border .2s ease-out;
+    transition: border .2s ease-out;
 }
 .portfolioItem:hover{
     border-color: #0534b4;
@@ -275,8 +275,8 @@ section:last-child{
 }
 .offer ul li {
     -webkit-transition: margin-left 0.3s;
-         -o-transition: margin-left 0.3s;
-            transition: margin-left 0.3s;
+    -o-transition: margin-left 0.3s;
+    transition: margin-left 0.3s;
     width: 100%;
 }
 .offer ul li:hover {
