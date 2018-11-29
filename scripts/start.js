@@ -7,4 +7,4 @@ window.onload=()=>{
     starsRate();
     rotate();
     swap();
-}
+};
