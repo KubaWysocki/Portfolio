@@ -92,7 +92,7 @@ body {
     position: sticky;
     top:0;
     z-index: 1;
-	background-color:#101010;
+	background-color:#202020;
     border-bottom: 1px solid black;
     -webkit-transition: height .2s ease;
     -o-transition: height .2s ease;
@@ -179,8 +179,12 @@ section{
     text-align: center;
     padding: 1rem 0;
 }
-section:last-child{
-    padding-bottom: .5%;
+section span{
+    font-size: 15px;
+    margin: 0;
+}
+h1{
+    margin:0;
 }
 .about{
     font-size: .9rem;
@@ -193,9 +197,6 @@ section:last-child{
 .abilities{
     background-color: #b6d6f2;
     color: #101010;
-}
-.abilities span{
-    font-size: 15px;
 }
 .skill{
     margin-top: 1rem;
@@ -274,17 +275,12 @@ section:last-child{
     padding:0;
     margin: 0;
 }
-.offer ul li {
-    -webkit-transition: margin-left 0.3s;
-    -o-transition: margin-left 0.3s;
-    transition: margin-left 0.3s;
-    width: 100%;
-}
 footer{
     background-color: #e83338;
     font-size: 0.7rem;
     background-color: #e83338;
     text-align: center;
+    padding-top: 1rem;
 }
 footer div{
     font-size: 1rem;
@@ -297,8 +293,14 @@ footer a{
     text-decoration: none;
     color: inherit;
 }
+footer a:hover{
+    text-decoration: none;
+    color: inherit;
+}
 footer span{
     color: #ffffff71;
+    margin-top: .5rem;
+    display: block;
 }
 
 @media (min-width: 450px) {
