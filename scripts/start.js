@@ -4,7 +4,6 @@ window.onload=()=>{
     menu();
     scrolling();
     actualSection();
-    starsRate();
     rotate();
     swap();
 };
