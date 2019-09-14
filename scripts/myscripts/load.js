@@ -11,11 +11,8 @@ const startAnimation=()=>{
             $('.wmore').css('left', -top/2);
             $('.btnStart').css('left', top/1.5);
     });
-
     const iOS = /iPad|iPhone|iPod/.test(navigator.userAgent) && !window.MSStream;   //iOS background fixed not working bug fix
     if(!iOS) $('.preview').css('background-attachment','fixed');
-    
-    $('.preview').css('background-size', '105% 105%');                              //deep effect on start 
 }
 const swap=()=>{                        //this function changes order of ul and img on larger devices (md)
     if($(window).width()>=768){

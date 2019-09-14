@@ -34,17 +34,18 @@ a {
     transition: opacity .2s ease;
 }
 .preview {
-    height:93vh;
+    height: 93vh;
 	background-image: url(../img/bgMobile.jpg);
     background-position: center top;
     background-size: 115% 115%;
 	text-transform: uppercase;
     overflow: hidden;
     font-weight: bold;
-    -webkit-transition: background-size 5s ease;
-    -o-transition: background-size 5s ease;
-    transition: background-size 5s ease;
     font-size: 1.2rem;
+    animation: deepEffect 4s linear forwards;
+}
+@keyframes deepEffect {
+    to { background-size: 105% 105%; }
 }
 .name{
     background-color: #000000d7;
@@ -175,7 +176,7 @@ a {
 .mNav>ul>li>a:hover{
 	color: white;
 }
-#a1.current,#a2.current,#a3.current,#a4.current,#a5.current,#a6.current{
+#navA0.current,#navA1.current,#navA2.current,#navA3.current,#navA4.current,#navA5.current{
     color: white;
 }
 section{

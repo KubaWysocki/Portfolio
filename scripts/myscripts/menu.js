@@ -17,35 +17,23 @@ const menu=()=>{
 		}
 	});
 }
-const actualSection=()=>{
-    const clear=()=>{for(let i=1;i<=6;i++) $('#a'+i).removeClass('current');}
-    $(document).on('scroll',function(){
-        const scrTop= $(document).scrollTop();
-        if (scrTop>=0) {
-            clear();
-            $('#a1').addClass('current');
-        }
-        if (scrTop>$('.btnStart').offset().top-100) {
-            clear();
-            $('#a2').addClass('current');
-        }
-        if (scrTop>$('.abilities').offset().top-100){
-            clear();
-            $('#a3').addClass('current');
-        }
-        if (scrTop>$('.portfolio').offset().top-100){
-            clear();
-            $('#a4').addClass('current');
-        }
-        if (scrTop>$('.offer').offset().top-100){
-            clear();
-            $('#a5').addClass('current');
-        }
-        if (scrTop>=($(document).height()-$(window).height())-100){
-            clear();
-            $('#a6').addClass('current');
-        }
-    });
+const actualSectionHighlight = () => {
+    const navHighlight = [
+        0,
+        $('.btnStart').offset().top-100,
+        $('.abilities').offset().top-100,
+        $('.portfolio').offset().top-100,
+        $('.offer').offset().top-100,
+        $(document).height()-$(window).height()-100
+    ]
+    const setActive = activeIndex => {
+        for(let i=0;i<=5;i++) $('#navA'+i).removeClass('current')
+        $('#navA'+ activeIndex).addClass('current')
+    }
+    $(document).on( 'scroll', () => {
+        const scrollTop = $(document).scrollTop()
+        navHighlight.forEach(( el, i ) => scrollTop >= el ? setActive( i ) : null )
+    })
 }
 const scrolling=()=>{
     const scroll=(e)=>{

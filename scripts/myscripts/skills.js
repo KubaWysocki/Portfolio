@@ -1,30 +1,30 @@
 const rotate=()=>{
     let timeoutId;
-$('.skill').hover(
-    function(){
-        let newImage= new Image;
-        let src=$('img',this).attr('src');
+    $('.skill').hover(
+        function(){
+            let newImage= new Image;
+            let src=$('img',this).attr('src');
+                    src=src.substr(0,src.lastIndexOf('.')-1);
+                    src=src+'1.png';
+                    newImage.src=src;
+            newImage.onload=()=>{
+                $('img',this).addClass('rotate');
+                clearTimeout(timeoutId);
+                timeoutId=setTimeout(()=>{
+                    $('p', this).css('transform','rotateY(0deg) translateY(-45%)');
+                    $('img',this).attr('src', src);
+                },300)
+            }
+        },
+        function(){
+            $('img',this).removeClass('rotate');
+            $('p', this).css('transform','rotateY(90deg) translateY(-45%)');
+            let src=$('img',this).attr('src');
                 src=src.substr(0,src.lastIndexOf('.')-1);
-                src=src+'1.png';
-                newImage.src=src;
-        newImage.onload=()=>{
-            $('img',this).addClass('rotate');
+                src=src+'0.png';
             clearTimeout(timeoutId);
-            timeoutId=setTimeout(()=>{
-                $('p', this).css('transform','rotateY(0deg) translateY(-45%)');
-                $('img',this).attr('src', src);
-            },300)
+            setTimeout(()=>{
+                $('img',this).attr('src', src)},300)
         }
-    },
-    function(){
-        $('img',this).removeClass('rotate');
-        $('p', this).css('transform','rotateY(90deg) translateY(-45%)');
-        let src=$('img',this).attr('src');
-            src=src.substr(0,src.lastIndexOf('.')-1);
-            src=src+'0.png';
-        clearTimeout(timeoutId);
-        setTimeout(()=>{
-            $('img',this).attr('src', src)},300)
-    }
-)
+    )
 }
