@@ -3,16 +3,16 @@ const menu=()=>{
 		let open = $('.mNav>ul').hasClass('expanded');
 		if(open){
 			$('.mNav>ul').css('opacity','0');
-			$('.bar1,.bar2,.bar3').toggleClass("change");
+			$('.bar1,.bar2,.bar3').toggleClass('change');
 			setTimeout(()=>{
-				$('.mNav>ul').toggleClass("expanded");
-				$('.mNav').toggleClass("expand");
+				$('.mNav>ul').toggleClass('expanded');
+				$('.mNav').toggleClass('expand');
 			}, 300);
 		}
 		else {
-			$('.mNav').toggleClass("expand");
-			$('.bar1,.bar2,.bar3').toggleClass("change");
-			$('.mNav>ul').toggleClass("expanded");
+			$('.mNav').toggleClass('expand');
+			$('.bar1,.bar2,.bar3').toggleClass('change');
+			$('.mNav>ul').toggleClass('expanded');
 			setTimeout(()=>{$('.mNav>ul').css('opacity','1')}, 300);
 		}
 	});
@@ -51,8 +51,8 @@ const scrolling=()=>{
         e.preventDefault();
         if($(window).width()<768){
             $('.mNav').removeClass('expand'); 
-            $('.mNav>ul').removeClass("expanded");
-            $('.bar1,.bar2,.bar3').toggleClass("change");	
+            $('.mNav>ul').removeClass('expanded');
+            $('.bar1,.bar2,.bar3').toggleClass('change');	
             setTimeout(()=>scroll(e),200);
         }
         else scroll(e);

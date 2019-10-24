@@ -7,10 +7,10 @@ const startAnimation=()=>{
     $(window).on('scroll',() => {
         let scrollTop=$(window).scrollTop()
         if( scrollTop < $(window).height()  ){
-            $('.name').css({"-webkit-transform": `translateX(${ scrollTop / 1.2 }px)`})
-            $('.desc').css({"-webkit-transform": `translateX(${ -scrollTop * 1.2 }px)`})
-            $('.wmore').css({"-webkit-transform": `translateX(${ -scrollTop / 2 }px)`})
-            $('.btnStart').css({"-webkit-transform": `translateX(${ scrollTop / 1.5 }px)`})
+            $('.name').css({'-webkit-transform': `translateX(${ scrollTop / 1.2 }px)`})
+            $('.desc').css({'-webkit-transform': `translateX(${ -scrollTop * 1.2 }px)`})
+            $('.wmore').css({'-webkit-transform': `translateX(${ -scrollTop / 2 }px)`})
+            $('.btnStart').css({'-webkit-transform': `translateX(${ scrollTop / 1.5 }px)`})
         }
     })
     const iOS = /iPad|iPhone|iPod/.test(navigator.userAgent) && !window.MSStream //iOS background fixed not working bug fix
